@@ -418,8 +418,16 @@ kbd {
     background-color: #777777;
     border-radius: 5px;
 }
-
-
+.cs-logo{
+    position: relative;
+}
+.inf-d{
+    position: absolute;
+    right: 18px;
+    bottom: -22px;
+    font-size: 14px;
+}
+.inf-d span{}
 /*--------------------------------------------------------------
 3. Invoice General Style
 ----------------------------------------------------------------*/
@@ -756,6 +764,10 @@ kbd {
     padding: 50px !important;
 }
 
+.cs-p25 {
+    padding: 25px !important;
+}
+
 .cs-p-t5 {
     padding-top: 5px !important;
 }
@@ -766,6 +778,9 @@ kbd {
 
 .cs-p-b5 {
     padding-bottom: 5px !important;
+}
+.cs-p-b25 {
+    padding-bottom: 25px !important;
 }
 
 .cs-p-b10 {
@@ -838,6 +853,10 @@ kbd {
     color: #111111;
 }
 
+.cs-primary_purple_color {
+    color: #593dea;
+}
+
 .cs-secondary_color {
     color: #777777;
 }
@@ -854,6 +873,10 @@ kbd {
     border-color: #eaeaea;
 }
 
+.cs-ternary_color1 {
+    border-color: #797e88;
+}
+
 .cs-focus_bg {
     background: #f6f6f6;
 }
@@ -862,6 +885,25 @@ kbd {
     background: #ffffff;
 }
 
+.cs-custerd_bg {
+    background: #eeecff;
+    position: relative;
+}
+.cs-custerd_bg::before{
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-image: url(../images/logo.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transform: rotate(-50deg);
+    opacity: 0.1;
+}
 .cs-accent_10_bg {
     background-color: rgba(42, 209, 157, 0.1);
 }
@@ -949,7 +991,7 @@ kbd {
 
 .cs-invoice.cs-style1 .cs-invoice_head.cs-type1 {
     align-items: flex-end;
-    padding-bottom: 25px;
+    padding-bottom: 35px;
     border-bottom: 1px solid #eaeaea;
 }
 
@@ -1264,7 +1306,7 @@ kbd {
 
 .tm-align-item-center {
     display: flex;
-    align-items: center;
+    align-items: center !important;
 }
 
 .tm-bg-gray {
